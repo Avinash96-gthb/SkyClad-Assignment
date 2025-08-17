@@ -119,8 +119,9 @@ The app includes comprehensive mock data:
 
 ## 🎨 Design Features
 
-### Dark Mode Priority
+### Light and Dark Mode support
 - Optimized for dark mode as specified
+- light mode also available by toggle in settings tab
 - Glassmorphism effects throughout the UI
 - Subtle animations and smooth transitions
 - Professional color scheme with accent colors
@@ -262,9 +263,8 @@ The app includes:
 ## 📞 Contact
 
 **Developer**: A Avinash Chidambaram  
-**Email**: [Your Email]  
+**Email**: [avinash.a2k4@gmail.com]  
 **Assignment for**: SkyCladVentures  
 
 ---
 
-*This project demonstrates modern iOS development practices using SwiftUI, with a focus on user experience, performance, and clean architecture.*
