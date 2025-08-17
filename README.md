@@ -55,6 +55,44 @@ A comprehensive iOS crypto portfolio and exchange app built with SwiftUI for Sky
 - **System-aware color schemes**
 - **Smooth theme transition animations**
 
+## 📸 Screenshots
+
+### Portfolio Dashboard - Complete Overview
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Portfolio Light](Screenshots/portfolio-dashboard-light.png) | ![Portfolio Dark](Screenshots/portfolio-dashboard-dark.png) |
+
+*Real-time portfolio tracking with interactive charts, asset overview, and recent transactions*
+
+---
+
+### Transactions Summary - History & Management  
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Transactions Light](Screenshots/transactions-light.png) | ![Transactions Dark](Screenshots/transactions-dark.png) |
+
+*Comprehensive transaction history with filtering, detailed information, and action buttons*
+
+---
+
+### Exchange Interface - Professional Trading
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Exchange Light](Screenshots/exchange-light.png) | ![Exchange Dark](Screenshots/exchange-dark.png) |
+
+*Intuitive swap interface with real-time conversion, form reset functionality, and professional rate display*
+
+---
+
+### Assets Management - Detailed View
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Assets Light](Screenshots/assets-light.png) | ![Assets Dark](Screenshots/assets-dark.png) |
+
+*Complete asset overview with individual charts, holdings information, and quick action buttons*
+
+---
+
 ## 🏗️ Architecture
 
 ### MVVM Pattern
@@ -72,11 +110,12 @@ A comprehensive iOS crypto portfolio and exchange app built with SwiftUI for Sky
 ## 📊 Mock Data
 
 The app includes comprehensive mock data:
-- **Portfolio**: ₹8,361.07 total value with BTC and ETH holdings
-- **Historical Data**: 30 days of hourly price data for charts
-- **Transactions**: 6+ sample transactions with various types and statuses
-- **Exchange Rates**: Real-time style exchange rates for major pairs
+- **Portfolio**: ₹23,781.57 total value with BTC, ETH, and INR holdings
+- **Historical Data**: 365 days of hourly price data for realistic charts
+- **Transactions**: 8+ sample transactions with various types and statuses including INR exchanges
+- **Exchange Rates**: Real-time style exchange rates for major pairs (BTC/INR, ETH/INR)
 - **Time-based Data**: Proper timestamps for realistic date displays
+- **Asset Diversity**: Crypto assets (BTC, ETH) and fiat currency (INR) with appropriate volatility patterns
 
 ## 🎨 Design Features
 
