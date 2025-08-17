@@ -35,16 +35,6 @@
 			path = SkyCladAssignment;
 			sourceTree = "<group>";
 		};
-		E1F2155B2E520F58008AD4E7 /* SkyCladAssignmentTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SkyCladAssignmentTests;
-			sourceTree = "<group>";
-		};
-		E1F215652E520F58008AD4E7 /* SkyCladAssignmentUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SkyCladAssignmentUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				E1F2154D2E520F56008AD4E7 /* SkyCladAssignment */,
-				E1F2155B2E520F58008AD4E7 /* SkyCladAssignmentTests */,
-				E1F215652E520F58008AD4E7 /* SkyCladAssignmentUITests */,
 				E1F2154C2E520F56008AD4E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				E1F2155A2E520F58008AD4E7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				E1F2155B2E520F58008AD4E7 /* SkyCladAssignmentTests */,
-			);
 			name = SkyCladAssignmentTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				E1F215642E520F58008AD4E7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E1F215652E520F58008AD4E7 /* SkyCladAssignmentUITests */,
 			);
 			name = SkyCladAssignmentUITests;
 			packageProductDependencies = (
