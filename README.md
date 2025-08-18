@@ -239,6 +239,7 @@ The app includes:
 - **Push Notifications**: Real-time price alerts
 - **Widget Support**: Home screen widgets for portfolio overview
 - **iPad Support**: Optimized layout for tablet usage
+- **Gradients**: Add custom gradients for cards to imprpve ui
 
 ### Known Limitations
 - Uses mock data instead of live crypto prices
