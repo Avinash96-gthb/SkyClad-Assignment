@@ -175,10 +175,24 @@ struct ProfileHeaderView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(.ultraThinMaterial)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color.indigo.opacity(0.4),
+                            Color.purple.opacity(0.3),
+                            Color.blue.opacity(0.2)
+                        ]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                        .fill(.ultraThinMaterial.opacity(0.5))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
                 )
         )
     }
@@ -237,10 +251,24 @@ struct QuickStatCard: View {
         .padding(.vertical, 16)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(.ultraThinMaterial)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            color.opacity(0.15),
+                            color.opacity(0.05),
+                            Color.clear
+                        ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                        .fill(.ultraThinMaterial.opacity(0.8))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.white.opacity(0.15), lineWidth: 1)
                 )
         )
     }
@@ -270,10 +298,24 @@ struct SettingsSectionView: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(.ultraThinMaterial)
+                    .fill(
+                        LinearGradient(
+                            gradient: Gradient(colors: [
+                                Color.gray.opacity(0.1),
+                                Color.gray.opacity(0.05),
+                                Color.clear
+                            ]),
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                            .fill(.ultraThinMaterial.opacity(0.9))
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.white.opacity(0.15), lineWidth: 1)
                     )
             )
         }

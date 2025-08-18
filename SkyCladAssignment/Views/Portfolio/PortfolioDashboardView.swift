@@ -105,10 +105,24 @@ struct PortfolioHeaderView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(.ultraThinMaterial)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color.blue.opacity(0.8),
+                            Color.purple.opacity(0.6),
+                            Color.indigo.opacity(0.4)
+                        ]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                        .fill(.ultraThinMaterial.opacity(0.3))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
                 )
         )
     }
@@ -245,10 +259,24 @@ struct PortfolioChartView: View {
         .padding(.vertical, 16)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(.ultraThinMaterial)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color.gray.opacity(0.3),
+                            Color.gray.opacity(0.1),
+                            Color.clear
+                        ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                        .fill(.ultraThinMaterial.opacity(0.5))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
                 )
         )
     }
@@ -322,10 +350,26 @@ struct AssetCard: View {
         .padding(16)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(.ultraThinMaterial)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            asset.percentageChange >= 0 ? 
+                                Color.green.opacity(0.2) : Color.red.opacity(0.2),
+                            asset.percentageChange >= 0 ? 
+                                Color.green.opacity(0.05) : Color.red.opacity(0.05),
+                            Color.clear
+                        ]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                        .fill(.ultraThinMaterial.opacity(0.6))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
                 )
         )
     }
@@ -404,10 +448,24 @@ struct TransactionRowView: View {
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 8)
-                .fill(.ultraThinMaterial)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            colorForTransactionType(transaction.type).opacity(0.15),
+                            colorForTransactionType(transaction.type).opacity(0.05),
+                            Color.clear
+                        ]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.white.opacity(0.1), lineWidth: 0.5)
+                        .fill(.ultraThinMaterial.opacity(0.7))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.white.opacity(0.15), lineWidth: 0.5)
                 )
         )
     }
